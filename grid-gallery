@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid gallery</title>
+</head>
+<body>
+    <section id="gallery">
+        <img class="row_one" src="" alt="">
+        <img class="row_one" src="" alt="">
+        <img class="row_one" src="" alt="">
+        <img class="row_dos" src="" alt="">
+        <img class="row_dos" src="" alt="">
+        <img class="row_dos" src="" alt="">
+    </section>
+</body>
+</html>
+
+<style>
+    #gallery
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(2,20vw);
+        background: #3C5C50;
+        justify-content: center;
+        grid-gap: 1px;
+        padding: 50px 0 50px 0;
+    }
+
+    #gallery img 
+    {
+        background: #ffffff;
+        cursor: pointer;
+        height:20vw;
+        width:20vw;
+    }
+
+    .row_one{grid-row: 1}
+
+    .row_dos{grid-row: 2}
+
+    #gallery img:nth-child(1), #gallery img:nth-child(4){grid-column: 1}
+
+    #gallery img:nth-child(2), #gallery img:nth-child(5){grid-column: 2}
+
+    #gallery img:nth-child(3), #gallery img:nth-child(6){grid-column: 3}
+</style>
