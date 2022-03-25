@@ -1,5 +1,6 @@
-<!-- codepen live example: https://codepen.io/luttringer/pen/PoEWaVz -->
+**codepen live example: https://codepen.io/luttringer/pen/PoEWaVz**
 
+**HTML**
 <section id="gallery">
     <img class="row_one" src="" alt="">
     <img class="row_one" src="" alt="">
@@ -9,6 +10,7 @@
     <img class="row_dos" src="" alt="">
 </section>
 
+**CSS**
 #gallery
 {
         display: grid;
