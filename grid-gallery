@@ -2,33 +2,39 @@
 
 **HTML**
 <section id="gallery">
-    <img class="row_one" src="" alt="">
-    <img class="row_one" src="" alt="">
-    <img class="row_one" src="" alt="">
-    <img class="row_dos" src="" alt="">
-    <img class="row_dos" src="" alt="">
-    <img class="row_dos" src="" alt="">
+  <img class="row_one" src="https://www.rionegro.com.ar/wp-content/uploads/2021/04/pink_floyd_the_final_cut.jpg">
+  <img class="row_one" src="https://m.media-amazon.com/images/I/71m0ofUWYXL._SL1300_.jpg">
+  <img class="row_one" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Optical-dispersion.png">
+  <img class="row_dos" src="https://m.media-amazon.com/images/I/71Okj3gDOxL._SL1473_.jpg">
+  <img class="row_dos" src="https://i.pinimg.com/originals/44/3a/c7/443ac7f1eb157d5be983242aa322c9b0.jpg">
+  <img class="row_dos" src="https://i.pinimg.com/736x/a9/d5/8b/a9d58bb00babcb8a5c238370591fac6f--pink-floyd.jpg">
 </section>
 
 **CSS**
+body
+{
+  margin:0;
+  padding:0;
+}
+
 #gallery
 {
-        display: grid;
-        grid-template-columns: repeat(3, 20vw);
-        grid-template-rows: repeat(2,20vw);
-        background: #3C5C50;
-        justify-content: center;
-        grid-column-gap: 1px;
-        grid-row-gap: 1px;
-        padding: 50px 0 50px 0;
+        display: grid; 
+        grid-template-columns: repeat(3, 20vw); 
+        grid-template-rows: repeat(2, 20vw);    
+        background: #45484a;                    
+        justify-content:center;
+        grid-gap:3px;
+        padding: 10vw 0 10vw 0;
 }
 
 #gallery img 
 {
   background: #ffffff;
   cursor: pointer;
+  width:20vw;
   height:20vw;
-  widht:20vw;
+  object-fit: cover;
 }
 
 .row_one{ grid-row: 1}
