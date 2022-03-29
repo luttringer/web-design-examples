@@ -1,0 +1,26 @@
+div
+{   
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 160px;
+    background-color: #333;
+    transition: transform ease 0.5s;
+    transform: translateX(-160px);
+}
+
+div.toggled{transform: translateX(0)}
+    
+div.toggled .hamburguer{transform: rotate(-90deg)}
+
+.hamburguer
+{
+    position: fixed;
+    left: 165px;
+    margin-top: 5px;
+    transition: transform 0.5s;
+    font-size: 26px;
+    cursor: pointer;
+    color: rgba(0,0,0,0.7);
+}
