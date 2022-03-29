@@ -1,0 +1,35 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+
+#gallery
+{
+    display: grid; 
+    grid-template-columns: repeat(3, 20vw); 
+    grid-template-rows: repeat(2, 20vw);    
+    background: #45484a;                    
+    justify-content:center;
+    grid-gap:3px;
+    padding: 10vw 0 10vw 0;
+}
+
+#gallery img 
+{
+    background: #ffffff;
+    cursor: pointer;
+    width:20vw;
+    height:20vw;
+    object-fit: cover;
+}
+
+.row_one{ grid-row: 1}
+
+.row_dos{ grid-row: 2}
+
+#gallery img:nth-child(1), #gallery img:nth-child(4){ grid-column: 1}
+
+#gallery img:nth-child(2), #gallery img:nth-child(5){ grid-column: 2}
+
+#gallery img:nth-child(3), #gallery img:nth-child(6){ grid-column: 3}
