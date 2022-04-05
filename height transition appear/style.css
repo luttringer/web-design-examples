@@ -1,0 +1,21 @@
+body{background: #333333}
+
+button
+{
+    margin-bottom: 30px;
+    width: 100px;
+    height: 30px;
+    background: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
+
+#cont_appear
+{
+    width: 100%;
+    background: #f2f2f2;
+    height: 30px;
+    transition: height 1s ease;
+}
+
+.estilo_height{height: 500px!important}
